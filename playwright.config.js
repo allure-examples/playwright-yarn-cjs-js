@@ -1,13 +1,13 @@
-const { devices } = require("@playwright/test");
+const { devices, defineConfig } = require("@playwright/test");
 
-const config = {
+export default defineConfig({
   testDir: "./test",
   reporter: [
     ["list"],
     [
       "allure-playwright",
       {
-        outputFolder: "./out/allure-results",
+        resultsDir: "./out/allure-results",
         environmentInfo: {
           node_version: process.version,
         },
@@ -22,7 +22,4 @@ const config = {
       },
     },
   ],
-  outputDir: "test-results/",
-};
-
-module.exports = config;  
+});
