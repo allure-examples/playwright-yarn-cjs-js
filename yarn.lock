@@ -9,7 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "playwright-yarn-cjs-js@workspace:."
   dependencies:
-    "@playwright/test": "npm:^1.30.0"
+    "@playwright/test": "npm:^1.48.2"
     allure-js-commons: "npm:^3.0.6"
     allure-playwright: "npm:^3.0.6"
   languageName: unknown
@@ -58,7 +58,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@playwright/test@npm:^1.30.0":
+"@playwright/test@npm:^1.48.2":
   version: 1.48.2
   resolution: "@playwright/test@npm:1.48.2"
   dependencies:
